@@ -1,0 +1,11 @@
+no_lives = int(input("Please enter number of lives.\n"))
+print()
+energy_level = int(input("Please enter the energy level.\n"))
+print()
+shield_level = int(input("Please enter the shield level.\n"))
+print()
+
+print("Health has been set.")
+print("❤"*no_lives)
+print("♦"*energy_level)
+print("♦"*shield_level)
