@@ -1,8 +1,8 @@
 # Display a box
-# print("#########")
-# print("#\t#")
-# print("#\t#")
-# print("#########")
+print("#########")
+print("#\t#")
+print("#\t#")
+print("#########")
 
 
 # Draw beep bot task
