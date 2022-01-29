@@ -1,0 +1,11 @@
+name = str(input("What is your name human?\n"))
+print()
+age = int(input("How old are you (in years)?\n"))
+print()
+height = float(input("How tall are you (in meters)?\n"))
+print()
+weight = int(input("How much do you weigh (in kilograms)?\n"))
+print()
+bmi = round(weight/(height ** 2),2)
+
+print(f"{name} you are {age} years old and your bmi is {bmi}.")
