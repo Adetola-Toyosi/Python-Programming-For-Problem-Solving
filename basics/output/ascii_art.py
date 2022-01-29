@@ -3,9 +3,7 @@
 # print("#\t#")
 # print("#\t#")
 # print("#########")
-# print()
-# print()
-# print()
+
 
 # Draw beep bot task
 print("#########")
