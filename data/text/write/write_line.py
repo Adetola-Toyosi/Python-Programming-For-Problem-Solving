@@ -11,4 +11,4 @@ try:
     print("The data has been written into the file")
 
 except IOError:
-    print("Please do the right thing.")
+    print("Please do the right thing")
