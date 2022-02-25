@@ -1,5 +1,5 @@
 def directions():
-    directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
+    directions = ["Move Forward", "Move Backwards", "Turn Left", "Turn Right"]
     return directions
 
 def menu():
@@ -13,11 +13,14 @@ def menu():
 
 def run():
     route = []
+    print("Working out escape route...")
+    for something in range(5):
+        route.append(menu())
+    print(f"Escape route: {route}")
+
+run()
 
 
 
-
-
-menu()
 
 
