@@ -24,3 +24,13 @@ Please select one of the following options:
 [4] Display the number of passenger per age group
 \n"""))
 print(f"You have selected option: {option}")
+
+def passengers_name():
+    print("The names of the passengers are...")
+    for record in records:
+        names = record[3]
+        print(names)
+
+# passengers_name()
+
+
