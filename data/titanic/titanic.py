@@ -54,3 +54,17 @@ def nonsurvivors():
     print(f"{not_survived} passengers did not survive")
 # nonsurvivors()
 
+def gender():
+    females = 0
+    males = 0
+    for record in records:
+        if record[4] == "male":
+            males = males + 1
+        else:
+            females = females + 1
+    print(f"females: {females}, males: {males}")
+# gender()
+
+
+
+
