@@ -30,7 +30,16 @@ def passengers_name():
     for record in records:
         names = record[3]
         print(names)
-
 # passengers_name()
 
+def number_of_survivors():
+    survived = 0
+    not_survived = 0
+    for record in records:
+        if int(record[1]) == 1:
+            survived = survived + 1
+        else:
+            not_survived = not_survived + 1
+    print(f"{survived} passengers survived")
+# number_of_survivors()
 
