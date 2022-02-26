@@ -43,3 +43,14 @@ def number_of_survivors():
     print(f"{survived} passengers survived")
 # number_of_survivors()
 
+def nonsurvivors():
+    survived = 0
+    not_survived = 0
+    for record in records:
+        if int(record[1]) == 1:
+            survived = survived + 1
+        else:
+            not_survived = not_survived + 1
+    print(f"{not_survived} passengers did not survive")
+# nonsurvivors()
+
