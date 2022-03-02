@@ -15,16 +15,7 @@ with open(file_path, "r") as file:
     print("Done!")
     print(f"Successfully loaded {len(records)} records")
 
-option = int(input(
-"""
-Please select one of the following options:
-[1] Display names of all passengers
-[2] Display the number of passengers that survived
-[3] Display the number of passengers per gender
-[4] Display the number of passenger per age group
-\n"""))
-print(f"You have selected option: {option}")
-
+######################################################################
 def passengers_name():
     print("The names of the passengers are...")
     for record in records:
@@ -62,8 +53,29 @@ def gender():
             males = males + 1
         else:
             females = females + 1
-    print(f"females: {females}, males: {males}")
+    print(f"Females: {females}, Males: {males}")
 # gender()
+
+
+option = int(input(
+"""
+Please select one of the following options:
+[1] Display names of all passengers
+[2] Display the number of passengers that survived
+[3] Display the number of passengers per gender
+[4] Display the number of passenger per age group
+\n"""))
+print(f"You have selected option: {option}")
+
+if option == 1:
+    passengers_name()
+elif option == 2:
+    number_of_survivors()
+elif option == 3:
+    gender()
+else:
+
+
 
 
 
