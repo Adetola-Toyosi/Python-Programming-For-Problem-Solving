@@ -35,4 +35,3 @@ def display_years(years):
     for year in sorted_years:
         print(year)
 
-

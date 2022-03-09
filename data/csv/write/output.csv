@@ -1,14 +1,14 @@
-['Song', 'Artist', 'Category', 'Year']
-['Blinding Lights', 'The Weeknd', 'r&b', '2020']
-['Watermelon Sugar', 'Harry Styles', 'pop', '2019']
-['Mood', '24kGoldn', 'rap', '2021']
-['Someone You Loved', 'Lewis Capaldi', 'pop', '2019']
-['Perfect', 'Ed Sheeran', 'pop', '2017']
-['Believer', 'Imagine Dragons', 'rock', '2017']
-['Lovely', 'Billie Eilish', 'electropop', '2018']
-['Circles', 'Post Malone', 'rap', '2019']
-['Shape of You', 'Ed Sheeran', 'pop', '2017']
-['Memories', 'Maroon 5', 'pop', '2021']
-['Closer', 'The Chainsmokers', 'pop', '2016']
-['Bad Guy', 'Billie Eilish', 'electropop', '2019']
-["Say You Won't Let Go", 'James Arthur', 'pop', '2016']
+Year, Category, Artist, Song
+2020, r&b, The Weeknd, Blinding Lights
+2019, pop, Harry Styles, Watermelon Sugar
+2021, rap, 24kGoldn, Mood
+2019, pop, Lewis Capaldi, Someone You Loved
+2017, pop, Ed Sheeran, Perfect
+2017, rock, Imagine Dragons, Believer
+2018, electropop, Billie Eilish, Lovely
+2019, rap, Post Malone, Circles
+2017, pop, Ed Sheeran, Shape of You
+2021, pop, Maroon 5, Memories
+2016, pop, The Chainsmokers, Closer
+2019, electropop, Billie Eilish, Bad Guy
+2016, pop, James Arthur, Say You Won't Let Go
