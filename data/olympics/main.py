@@ -1,18 +1,21 @@
 import csv
-# import process
+import process
 import tui
 
 
 def read_data(file_path):
-    file_path = "athlete_events.csv"
-    tui.started(file_path)
+    tui.started(f"Reading data from {file_path}")
+    data = []
 
-    with open(file_path, 'r') as file:
+    with open(file_path) as file:
         csv_reader = csv.reader(file)
-        header = next(csv_reader)
-        data = csv_reader
 
-    tui.completed()
+        for line in csv_reader:
+            data.append(line)
+        tui.completed()
+        return data
+
+
 
 def run():
     athlete_data = read_data("athlete_events.csv")
@@ -29,7 +32,6 @@ def run():
             break
         else:
             tui.error("Invalid Selection!")
-
 
 if __name__ == "__main__":
     run()
