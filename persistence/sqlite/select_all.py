@@ -1,15 +1,13 @@
 import sqlite3 as sql
 
-db = sql.connect('users.db')  # to connect to the database
-cursor = db.cursor()  # to execute the query and fetch all the records from the database
+db = sql.connect('users.db')
+cursor = db.cursor()
 
 cursor.execute("SELECT * FROM users")
 all_records = cursor.fetchall()
 
-print("All users in the system: ")
-print()
+print("All users in the system")
+for record in all_records:
+    print(record)
 
-for records in all_records:
-    print(records)
-
-db.close()  # to close the database
+db.close()
