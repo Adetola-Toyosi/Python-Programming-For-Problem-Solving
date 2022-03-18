@@ -64,8 +64,25 @@ def display_products_missing_suppliers():
     """)
 
     records = cursor.fetchall()
+    print("The suppliers for each products are: ")
 
     count = 0
     while count < len(records):
         print(f"Product: {records[count][1]}, Supplier: {records[count][4]}, Supplier Location: {records[count][8]}, {records[count][9]}")
+        count = count + 1
+
+
+def display_missing_products():
+    cursor.execute("""
+    SELECT * FROM supplier s
+    LEFT OUTER JOIN product p
+    ON s.supplier_id = p.product_id
+    """)
+
+    records = cursor.fetchall()
+    print("The suppliers for each product are as follows: ")
+
+    count = 0
+    while count < len(records):
+        print(f"Supplier: {records[count][1]}, Product: {records[count][5]}")
         count = count + 1

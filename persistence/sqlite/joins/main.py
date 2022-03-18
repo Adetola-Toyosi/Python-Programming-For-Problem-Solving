@@ -7,6 +7,7 @@ def menu():
     [2] Display suppliers
     [3] Display supplier location
     [4] Display missing suppliers
+    [5] Display missing products
         """)
 
     selection = int(input("Your Selection: \n"))
@@ -19,7 +20,8 @@ def menu():
         db.display_product_supplier_locations()
     elif selection == 4:
         db.display_products_missing_suppliers()
-
+    elif selection == 5:
+        db.display_missing_products()
 
 
 
