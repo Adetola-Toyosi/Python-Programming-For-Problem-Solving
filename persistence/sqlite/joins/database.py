@@ -37,3 +37,18 @@ def display_product_supplier():
         count = count + 1
 
 
+def display_product_supplier_locations():
+    cursor.execute("""
+    SELECT * FROM product p 
+    INNER JOIN supplier s 
+    ON p.product_id = s.supplier_id
+    INNER JOIN location l 
+    ON p.product_id = l.id
+    """)
+
+    records = cursor.fetchall()
+
+    count = 0
+    while count < len(records):
+        print(f"Product: {records[count][1]}, Supplier: {records[count][4]}, Supplier Location: {records[count][8]}, {records[count][9]}")
+        count = count + 1

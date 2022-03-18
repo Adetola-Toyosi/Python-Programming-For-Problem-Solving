@@ -11,8 +11,12 @@ def menu():
 
     if selection == 1:
         db.display_products_with_stock_levels()
-    elif selection ==2:
+    elif selection == 2:
         db.display_product_supplier()
+    elif selection == 3:
+        db.display_product_supplier_locations()
+
+
 
 
 
