@@ -17,3 +17,17 @@ def presenters_with_organisation():
     for record in records:
         print(f"Presenter: {record[1]}, Organisation: {record[4]}")
 
+def events_with_their_location():
+    """To display a list of events with their organisations"""
+    cursor.execute("""
+    SELECT * FROM events e 
+    INNER JOIN location l
+    ON e.loc_id = l.id
+    """)
+
+    records = cursor.fetchall()
+    print("List of events with their locations: ")
+
+    for record in records:
+        print(f"Event: {record[1]}, Location: {record[5]},{record[6]}")
+
