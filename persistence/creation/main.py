@@ -31,3 +31,17 @@ def events_with_their_location():
     for record in records:
         print(f"Event: {record[1]}, Location: {record[5]},{record[6]}")
 
+def presenter_for_a_specified_event():
+    """To display a list of presenters for a specified event"""
+    event_id = int(input("Please enter the event id: \n"))
+    cursor.execute(f"""
+    SELECT * FROM events e 
+    WHERE id={event_id}
+    INNER JOIN presenter p
+    ON e.id = p.id
+    """)
+
+    records = cursor.fetchone()
+
+    for record in records:
+        print(record)
