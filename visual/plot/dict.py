@@ -29,7 +29,7 @@ def data():
 
 
 def generate():
-    line_no = int(input("How many lines would you like to display?"))
+    line_no = int(input("How many lines would you like to display?\n"))
 
     for i in range(line_no):
         values = data()
@@ -44,9 +44,15 @@ def generate():
             m = random.randint(1,20)
             y.append(m)
 
-    print(values.values())
-    print(x,y)
+        format = f"{values['color']}{values['line_style']}{values['marker_style']}"
+
+    plt.plot(x,y,format)
+    plt.show()
 
 
-generate()
+def run():
+    print("Running....")
+    generate()
+    return 'Done!'
 
+print(run())
